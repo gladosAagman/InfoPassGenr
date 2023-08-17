@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to InfoPass Gen Event</title>
+</head>
+<body>
+    <h2>Welcome to InfoPass Gen Event</h2>
+    <p>Participant Details:</p>
+    <p>Name: <span th:text="${participant.firstName} + ' ' + ${participant.middleName} + ' ' + ${participant.lastName}"></span></p>
+    <p>Date of Birth: <span th:text="${participant.dob}"></span></p>
+    <p>College Address: <span th:text="${participant.collegeAddress}"></span></p>
+    <p>Generated Password: <span th:text="${participant.generatedPassword}"></span></p>
+    <p>Thank you for registering!</p>
+</body>
+</html>

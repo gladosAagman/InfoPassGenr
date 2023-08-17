@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>InfoPass Gen Registration</title>
+</head>
+<body>
+    <h2>InfoPass Gen Registration</h2>
+    <form action="/register" method="post" th:object="${participant}">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" th:field="*{firstName}" required><br>
+
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName" th:field="*{middleName}" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" th:field="*{lastName}" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" th:field="*{dob}" required><br>
+
+        <label for="collegeAddress">College Address:</label>
+        <textarea id="collegeAddress" name="collegeAddress" th:field="*{collegeAddress}" required></textarea><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
